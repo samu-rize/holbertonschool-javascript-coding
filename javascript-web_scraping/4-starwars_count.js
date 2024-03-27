@@ -1,10 +1,10 @@
 #!/usr/bin/node
 
-const request = require("request");
+const request = require('request');
 const url = process.argv[2];
 const id = '18';
 
-request({method: "GET", url: url}, function(err, response, body) {
+request({ method: 'GET', url }, (err, response, body) => {
   if (err) {
     console.error(err);
   } else {
